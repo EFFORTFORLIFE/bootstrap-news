@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <title>新闻</title>
+    <style>
+        @media(max-width:768px){
+            .nav-logo{
+                margin-left:10px;
+            }
+            .serch-bar{
+                margin-top:10px;
+            }
+        }
+        .nav-logo{
+            width:36px;
+            background-image:url("imgs/newslogo.jpg");
+            background-repeat: no-repeat;
+            background-size:100%;
+            background-position: center center;
+            margin-right:30px;
+        }
+        .nav-list a{
+            border:none;
+        }
+        .list-group{
+            box-shadow: 2px 2px 2px #ccc;
+        }
+        .main_content .row div{
+            padding:2px;
+        }
+        .news-list-item{
+            margin-top:10px;
+            box-shadow: 2px 2px 2px #ccc;
+        }
+        .news-list-item:first-of-type{
+            margin-top:0px;
+        }
+        .news-list-item img{
+            width:100%;
+        }
+        .avabar{
+            width:15px;
+        }
+        .news-list-item a{
+            text-decoration: none;
+            color:#666;
+            font-weight: bold;
+            font-size: 90%;
+        }
+        .top-card{
+            padding:10px;
+            margin-top:10px;
+            margin-bottom:10px;
+            border-radius: 5px;
+            background:#f4f4f9;
+        }
+        .top-card img{
+            max-width:100%;
+            border-radius:5px;
+        }
+        .top-card div{
+            padding:2px;
+        }
+        .under-card{
+            background:#f4f4f9;
+            padding:10px;
+            border-radius: 5px;
+        }
+        .card-title{
+            font-weight: bold;
+            font-size:110%;
+        }
+        .news-status{
+            color:#9898af;
+            font-size: 80%;
+        }
+        .avabar{
+            display: inline-block;
+        }
+        samp{
+            margin-left:10px;
+            color:#a0a0a2;
+            font-weight: bold;
+            font-size:80%;
+        }
+        .card-item{
+            margin-top:10px;
+        }
+        body>div{
+            position:relative;
+        }
+        .advertise{
+            width:100px;
+            height:100px;
+            position:absolute;
+            bottom:0px;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand nav-logo"></a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="native.html">国内</a></li>
+                <li><a href="football.html">国球</a></li>
+                <li><a href="digit.html">数码</a></li>
+                <li><a href="maizi.html" target="_blank">其他</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">登陆</a></li>
+                <li><a href="register.html">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container main_content">
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="list-group nav-list hidden-xs">
+                <a class="list-group-item">综合</a>
+                <a class="list-group-item">电影</a>
+                <a class="list-group-item">电视剧</a>
+                <a class="list-group-item">VIP</a>
+                <a class="list-group-item">明星</a>
+                <a class="list-group-item">学习</a>
+                <a class="list-group-item">体育</a>
+                <a class="list-group-item">文艺</a>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div class="news-list">
+                <div class="news-list-item clearfix">
+                    <div class="col-sm-5 col-xs-5"><img src="imgs/new1.jpg"/></div>
+                    <div class="col-sm-7 col-xs-7">
+                        <a href="detail.html">周润发北京打车，却被拒绝，司机的回答太真实</a><br/>
+                        <div class="avabar"><img src="imgs/newslogo.jpg"/></div><samp>北京网 11小时前</samp>
+                    </div>
+                </div>
+                <div class="news-list-item clearfix">
+                    <div class="col-sm-5 col-xs-5"><img src="imgs/new2.jpg"/></div>
+                    <div class="col-sm-7 col-xs-7">
+                        <a href="detail.html">去香港必去的9个地方</a><br/>
+                        <div class="avabar"><img src="imgs/newslogo.jpg"/></div><samp>天津网 11小时前</samp>
+                    </div>
+                </div>
+                <div class="news-list-item clearfix">
+                    <div class="col-sm-5 col-xs-5"><img src="imgs/new3.jpg"/></div>
+                    <div class="col-sm-7 col-xs-7">
+                        <a href="detail.html">据说未来的这一年可以过2个春节 咋回事？</a><br/>
+                        <div class="avabar"><img src="imgs/newslogo.jpg"/></div><samp>央视 11小时前</samp>
+                    </div>
+                </div>
+                <div class="news-list-item clearfix">
+                    <div class="col-sm-5 col-xs-5"><img src="imgs/new4.jpg"/></div>
+                    <div class="col-sm-7 col-xs-7">
+                        <a href="detail.html">儿媳吃饭总掉筷子，婆婆不解，蹲下观察后，溜厕所报警</a><br/>
+                        <div class="avabar"><img src="imgs/newslogo.jpg"/></div><samp>中央青年报 11小时前</samp>
+                    </div>
+                </div>
+                <div class="news-list-item clearfix">
+                    <div class="col-sm-5 col-xs-5"><img src="imgs/new5.jpg"/></div>
+                    <div class="col-sm-7 col-xs-7">
+                        <a href="detail.html">原来除了中国，这些地方春节也是法定假日！</a><br/>
+                        <div class="avabar"><img src="imgs/newslogo.jpg"/></div><samp>新华国际头条 11小时前</samp>
+                    </div>
+                </div>
+                <div class="news-list-item clearfix">
+                    <div class="col-sm-5 col-xs-5"><img src="imgs/new6.jpg"/></div>
+                    <div class="col-sm-7 col-xs-7">
+                        <a href="detail.html">“反感亲戚的根本原因”上热搜 网友:内容太真实</a><br/>
+                        <div class="avabar"><img src="imgs/newslogo.jpg"/></div><samp>中国青年报 11小时前</samp>
+                    </div>
+                </div>
+                <div class="news-list-item clearfix">
+                    <div class="col-sm-5 col-xs-5"><img src="imgs/new2.jpg"/></div>
+                    <div class="col-sm-7 col-xs-7">
+                        <a href="detail.html">去香港必去的9个地方</a><br/>
+                        <div class="avabar"><img src="imgs/newslogo.jpg"/></div><samp>天津网 11小时前</samp>
+                    </div>
+                </div>
+                <div class="news-list-item clearfix">
+                    <div class="col-sm-5 col-xs-5"><img src="imgs/new1.jpg"/></div>
+                    <div class="col-sm-7 col-xs-7">
+                        <a href="detail.html">周润发北京打车，却被拒绝，司机的回答太真实</a><br/>
+                        <div class="avabar"><img src="imgs/newslogo.jpg"/></div><samp>北京网 11小时前</samp>
+                    </div>
+                </div>
+                <div class="news-list-item clearfix">
+                    <div class="col-sm-5 col-xs-5"><img src="imgs/new6.jpg"/></div>
+                    <div class="col-sm-7 col-xs-7">
+                        <a href="detail.html">“反感亲戚的根本原因”上热搜 网友:内容太真实</a><br/>
+                        <div class="avabar"><img src="imgs/newslogo.jpg"/></div><samp>中国青年报 11小时前</samp>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="serch-bar">
+                <input class="search form-control" placeholder="请输入关键字"></input>
+            </div>
+            <div class="side-bar-card clearfix top-card">
+                <div class="col-sm-5 col-xs-5 col-md-5"><img src="imgs/tvnews.jpg" class="img-responsive"/></div>
+                <div class="col-sm-7 col-xs-7  col-md-7">
+                    <a href="maizi.html" target="_blank">麦子学院培训</a>
+                </div>
+            </div>
+            <div class="side-bar-card under-card">
+                <div class="card-title">英文专栏</div>
+                <div class="card-body">
+                    <div class="card-item">
+                        <span class="item-content">People who truly loved once are far more likely to love again.</span>
+                        <div class="news-status"><span>15k阅读 </span><span>12条评论</span></div>
+                    </div>
+                    <div class="card-item">
+                        <span class="item-content">We laughed and kept saying "See you soon".</span>
+                        <div class="news-status"><span>111k阅读 </span><span>122条评论</span></div>
+                    </div>
+                    <div class="card-item">
+                        <span class="item-content">I wanna always stay with you</span>
+                        <div class="news-status"><span>12k阅读 </span><span>120条评论</span></div>
+                    </div>
+                    <div class="card-item">
+                        <span class="item-content">No one is free, even the birds are chained to the sky. </span>
+                        <div class="news-status"><span>10k阅读 </span><span>212条评论</span></div>
+                    </div>
+                    <div class="card-item">
+                        <span class="item-content">Sometimes it's just to do the right thing, even if it's painful inside. .</span>
+                        <div class="news-status"><span>5k阅读 </span><span>712条评论</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

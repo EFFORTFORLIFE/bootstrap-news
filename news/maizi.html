@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <title>麦子学院</title>
+    <style>
+        .navbar{
+            background:#fff;
+        }
+        .firstPage{
+            margin-top:50px;
+            color:white;
+            text-align: center;
+            background-image:url('imgs/bg.jpg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .firstPage>div{
+            width:100%;
+            background:rgba(0,0,0,0.5);
+            padding:60px;
+        }
+        .firstPage img{
+            margin-top:20px;
+            width:100%;
+        }
+        .forum{
+            margin-top:30px;
+            text-align: center;
+        }
+        .logo-icon{
+            padding: 18px;
+            font-size: 25px;
+            border-radius: 50%;
+            background:#5b51e6;
+            color:#fff;
+        }
+        .front{
+            text-align: center;
+        }
+        .front>div{
+            padding:0px;
+        }
+        .front h2{
+        }
+        .glyphicon-grain{
+            padding:10px;
+            background:#666;
+            border-radius: 50%;
+            margin-right:10px;
+            color:#fff;
+        }
+        .front img{
+            width:100%;
+        }
+        .front-list-item{
+            background:#f1e5e5;
+            margin-top:10px;
+            box-shadow: 2px 2px 4px;
+            padding:20px;
+        }
+        .newclass{
+            text-align: center;
+            margin-top:20px;
+        }
+        .newclass img{
+            width:100%;
+        }
+        .newclass button{
+            margin-top:10px;
+        }
+        .newclass>div{
+            background:#f1e5e5;
+            padding:10px;
+            box-shadow: 2px 2px 4px;
+        }
+        .thumbnail{
+            margin:0px;
+        }
+        .contact{
+            background-image: url("imgs/Bg1.jpg");
+            color:white;
+            text-align: center;
+            padding:60px;
+            padding-bottom: 20px;
+        }
+        .contact form>input,textarea{
+            margin:10px;
+        }
+        .mobile{
+            background:#f1e5e5;
+            padding:10px;
+            box-shadow: 2px 2px 4px;
+            margin:20px auto;
+        }
+        .mobile img{
+            width:100%;
+        }
+        @media(max-width: 768px){
+            .firstPage,.forum,.front,.newclass,.mobile,.contact{
+                margin-left:10px;
+                margin-right:10px;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-brand">麦子学院</div>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">论坛</a></li>
+                <li><a href="#">前端开发</a></li>
+                <li><a href="#">最新课程</a></li>
+                <li><a href="#">移动App</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--首页-->
+<section class="firstPage" id="firstPage">
+    <div>
+        <h2>bootstrap实战练习</h2>
+        <p>本项目开始于今天</p>
+        <p>响应式开发和动态效果的实现</p>
+        <div class="row">
+            <div class="col-ms-8 col-ms-push-2 col-md-8 col-md-push-2">
+                <img src="imgs/firstPageImg.PNG" class="img-responsive"/>
+            </div>
+        </div>
+    </div>
+</section>
+<!--论坛-->
+<section class="forum" id="forum">
+    <div class="container">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-print logo-icon"></span>
+            <h2>Android开发</h2>
+            <p>安卓开发用java语言</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-apple logo-icon"></span>
+            <h2>Apple开发</h2>
+            <p>苹果开发用c的高级语言</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-oil logo-icon"></span>
+            <h2>嵌入式开发</h2>
+            <p>在硬件上开发</p>
+        </div>
+    </div>
+</section>
+<!--前端开发-->
+<section class="front" id="front">
+    <div class="container">
+        <div class="front-list-item clearfix">
+            <div class="col-sm-7">
+                <h2>Bootstrap响应式开发</h2>
+                <p>李厚霖压顶无可奈何花落去李厚霖在</p>
+                <p><span class="glyphicon glyphicon-grain"></span>李厚霖压顶无可奈何花落去李厚霖在</p>
+                <p><span class="glyphicon glyphicon-grain"></span>李厚霖压顶无可奈何花落去李厚霖在</p>
+            </div>
+            <div class="col-sm-5">
+                <img src="imgs/frontImg.PNG"/>
+            </div>
+        </div>
+        <div class="front-list-item clearfix">
+            <div class="col-sm-5">
+                <img src="imgs/frontImg2.PNG"/>
+            </div>
+            <div class="col-sm-7">
+                <h2>HTML5前端开发</h2>
+                <p>李厚霖压顶无可奈何花落去李厚霖在</p>
+                <p><span class="glyphicon glyphicon-grain"></span>李厚霖压顶无可奈何花落去李厚霖在</p>
+                <p><span class="glyphicon glyphicon-grain"></span>李厚霖压顶无可奈何花落去李厚霖在</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--newclass-->
+<section class="newclass" id="newclass">
+    <div class="container">
+        <h3>最新课程</h3>
+        <div class="thumbnail col-sm-3 col-xs-6">
+            <img src="imgs/newclassImg.PNG"/>
+            <button>加入学习</button>
+        </div>
+        <div class="thumbnail col-sm-3 col-xs-6">
+            <img src="imgs/newclassImg.PNG"/>
+            <button>加入学习</button>
+        </div>
+        <div class="thumbnail col-sm-3 col-xs-6">
+            <img src="imgs/newclassImg.PNG"/>
+            <button>加入学习</button>
+        </div>
+        <div class="thumbnail col-sm-3 col-xs-6">
+            <img src="imgs/newclassImg.PNG"/>
+            <button>加入学习</button>
+        </div>
+        <div class="thumbnail col-sm-3 col-xs-6">
+            <img src="imgs/newclassImg.PNG"/>
+            <button>加入学习</button>
+        </div>
+        <div class="thumbnail col-sm-3 col-xs-6">
+            <img src="imgs/newclassImg.PNG"/>
+            <button>加入学习</button>
+        </div>
+    </div>
+</section>
+<!--移动开发-->
+<section class="mobile container" id="mobile">
+    <div class="col-sm-6">
+        <h2>HTML5前端开发</h2>
+        <p>李厚霖压顶无可奈何花落去李厚霖在</p>
+        <p><span class="glyphicon glyphicon-grain"></span>李厚霖压顶无可奈何花落去李厚霖在</p>
+        <p><span class="glyphicon glyphicon-grain"></span>李厚霖压顶无可奈何花落去李厚霖在</p>
+    </div>
+    <div class="col-sm-6">
+        <img src="imgs/frontImg.PNG"/>
+    </div>
+</section>
+<!--联系我们-->
+<footer class="contact" id="contact">
+    <div>
+        <div>
+            <div class="col-md-6 col-sm-6">
+                <h2>联系我们</h2>
+                <p>嗼是浪费了基督教法律上的肌肤垃圾堆了嗼是浪费了基督教法律上的肌肤垃圾堆了嗼是浪费了基督教法律上的肌肤垃圾堆了嗼是浪费了基督教法律上的肌肤垃圾堆了嗼是浪费了基督教法律上的肌肤垃圾堆了</p>
+                <p>嗼是浪费了基督教法律上的肌肤垃圾堆了</p>
+                <p>嗼是浪费了基督教法律上的肌肤垃圾堆了</p>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <form>
+                    <input class="form-control" placeholder="姓名"/>
+                    <input class="form-control" placeholder="电话"/>
+                    <input class="form-control" placeholder="邮箱"/>
+                    <textarea rows="4" class="form-control" placeholder="留言"></textarea>
+                    <input type="button" value="提交" class="btn-block btn-danger"/>
+                </form>
+            </div>
+        </div>
+        <div class="container"><span>@copyright 版权所有</span></div>
+    </div>
+</footer>
+</body>
+</html>

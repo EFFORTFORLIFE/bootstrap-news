@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <title>详情</title>
+    <style>
+        @media(max-width:768px){
+            .nav-logo{
+                margin-left:10px;
+            }
+        }
+        .nav-logo{
+            width:36px;
+            background-image:url("imgs/newslogo.jpg");
+            background-repeat: no-repeat;
+            background-size:100%;
+            background-position: center center;
+            margin-right:30px;
+        }
+        .detail-side img{
+            width:100%;
+        }
+        .detail-side{
+            background:#f4f4f9;
+            border-radius:5px;
+            padding:10px;
+        }
+        .detail-side-title{
+            margin:15px;
+            font-size:110%;
+        }
+        .detail-side-item{
+            margin-top:10px;
+        }
+        .detail-side-item div:nth-child(1){
+            padding:0px;
+            margin:10px 0;
+        }
+        #detail-img{
+            width:100%;
+            margin-bottom:20px;
+        }
+        samp{
+            font-size:90%;
+            color:#ccc;
+            margin-right:0px;
+        }
+        .news-status{
+            color:#9898af;
+            font-size: 80%;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand nav-logo"></a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="native.html">国内</a></li>
+                <li><a href="football.html">国球</a></li>
+                <li><a href="digit.html">数码</a></li>
+                <li><a href="maizi.html" target="_blank">其他</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html">登陆</a></li>
+                <li><a href="register.html">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8">
+            <h3><b>周润发出生于1955年5月18日，是一位著名的香港演员，也被国家评为一级演员。</b></h3>
+            <samp>发布于1小时前</samp><samp>12条评论</samp>
+            <blockquote>
+                <p>在2000年被美国《时代》周刊评为了七位“地球名人英雄”之一</p>
+            </blockquote>
+            <p>而就算取得了如此之大的成就，周润发的生活也很是朴素低调。他不爱穿名牌，一身衣服可以连穿几年，和普通的香港市民一样外出搭乘地铁和公交，如果有粉丝索要签名和合影，他也会尽量满足。</p>
+            <img id="detail-img" src="imgs/runfa.jpeg"/>
+        </div>
+        <div class="col-sm-4 detail-side">
+            <strong class="detail-side-title">更多咨讯</strong>
+            <div class="detail-side-item clearfix">
+                <div class="col-xs-5"><img src="imgs/new1.jpg" class="img-responsive"/></div>
+                <div class="col-xs-7">
+                    <span class="item-content">People who truly loved once are far more likely to love again.</span>
+                    <div class="news-status"><span>15k阅读 </span><span>12条评论</span></div>
+                </div>
+            </div>
+            <div class="detail-side-item clearfix">
+                <div class="col-xs-5"><img src="imgs/new4.jpg" class="img-responsive"/></div>
+                <div class="col-xs-7">
+                    <span class="item-content">We laughed and kept saying "See you soon".</span>
+                    <div class="news-status"><span>111k阅读 </span><span>122条评论</span></div>
+                </div>
+            </div>
+            <div class="detail-side-item clearfix">
+                <div class="col-xs-5"><img src="imgs/new3.jpg" class="img-responsive"/></div>
+                <div class="col-xs-7">
+                    <span class="item-content">No one is free, even the birds are chained to the sky. </span>
+                    <div class="news-status"><span>10k阅读 </span><span>212条评论</span></div>
+                </div>
+            </div>
+            <div class="detail-side-item clearfix">
+                <div class="col-xs-5"><img src="imgs/new2.jpg" class="img-responsive"/></div>
+                <div class="col-xs-7">
+                    <span class="item-content">Sometimes it's just to do the right thing, even if it's painful inside. .</span>
+                    <div class="news-status"><span>5k阅读 </span><span>712条评论</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
